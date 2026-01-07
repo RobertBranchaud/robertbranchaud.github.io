@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracotta: #AA5042;
+  --color-ms-blue: #6874E8;
+  --color-dust: #FF9B42;
+  --color-dust-origional: #A6808C;
+  
+}

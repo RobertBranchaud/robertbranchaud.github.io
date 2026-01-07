@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <link href="dist/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-900 overflow-y-scroll">
+    <div class="flex justify-center mt-4">
+        <nav class="flex items-center gap-12 px-6 py-3 border-3 border-slate-700 rounded-xl text-2lg bg-gray-800/80">
+            <a href="/index.html" class="px-4 py-2 rounded-lg border-2 border-dust text-neutral-800 bg-slate-400 hover:bg-slate-100 hover:border-emerald-700 font-semibold transition">Home</a>
+            <a href="/projects.html" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 font-semibold transition">Projects</a>
+            <a href="/resume.html" class="px-4 py-2 rounded-lg border-2 border-dust text-neutral-800 bg-slate-400 hover:bg-slate-100 hover:border-emerald-700 font-semibold transition">Resume</a>
+            <a href="/about.html" class="px-4 py-2 rounded-lg border-2 border-dust text-neutral-800 bg-slate-400 hover:bg-slate-100 hover:border-emerald-700 font-semibold transition">About</a>
+        </nav>
+    </div>
+
+    <div class="flex min-h-screen items-center justify-center mt-16 pb-22">
+        <div class="flex flex-col gap-25 items-center justify-center w-fit">
+            <div class="flex flex-col p-6 rounded-3xl border-2 border-dust bg-gray-800/80">
+                <div class="flex flex-row justify-center gap-15">
+                    <img src="assets\images\harp_actual.jpg" alt="" class="w-65 rounded-3xl self-center" />
+                    <div class="flex flex-col w-210 items-center gap-8">
+                        <h1 class="text-5xl font-bold text-emerald-500 font-serif"><span class="text-white font-sans">The</span> Rotary Harp</h1>
+                        <p class="text-white indent-8">The rotary harp is a musical machine designed to be an automation of the acustic harp. 
+                            It consists of a two multi-directional spinning pieces, allowing the machine to quickly find and play the correct string. 
+                            The project was carried out in completion of the WPI <span class="italic">Musical Robotics</span> practicum course in a group with two additional students. 
+                            It is a continuation of the same machine from a previous group, with new design and all new software.
+                        </p>
+                        <p class="text-white indent-8">As the sole programmer on this project, I gained great experience in embedded programming. 
+                            The machine is controlled by a Raspberry Pi Pico W and programmed in Python (MicroPython). 
+                            It includes features such as 
+                                Wi-Fi communication over local networks, 
+                                serial connection for physical communication, 
+                                precise hardware control including ramping motors and algorithmic selection of closest motors,
+                                live playing of notes from a digital audio workstation, and
+                                autonomous playing of random notes.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-center gap-10">
+                    <a class="inline-flex gap-1 items-center p-2 h-10 rounded-lg border-2 border-dust text-white text-xl" href="https://github.com/RobertBranchaud/rhx0">
+                    GitHub
+                    <img class="w-5 h-5 invert" src="assets\images\icone-github-noir.png" ald="GitHub">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col p-6 rounded-3xl border-2 border-dust bg-gray-800/80">
+                <div class="flex flex-row justify-center gap-15">
+                    
+                    <div class="flex flex-col w-210 items-center gap-8">
+                        <h1 class="text-5xl font-bold text-emerald-500 font-serif"><span class="text-white font-sans">Interactive Hospital</span> Web App</h1>
+                        <p class="text-white indent-8">This project, carried out in completion of the WPI <span class="italic">Software Engineering</span> course, 
+                            was done in a team of eleven software engineering students applying the agile development methodology. Over the course of seven weeks, 
+                            the team created a website to act as an new improved version of the Mass General Brigham website, including a sophisticated map page, 
+                            user-friendly patient services, and several employee-level services. While the site was deployed via AWS, it is not, and was never meant to be,
+                             used as the actual site for the hospital.
+                        </p>
+                        <p class="text-white indent-8">In this project I took on the role of scrum master and backend and algorithms engineer. 
+                            I led the programming of the in-hospital pathfinding, implementing a versatile subsystem with interchangable pathfinding methods. 
+                            I also contributed to database design and backend programming, culminating in the creation of robust endpoints for the implementation of a user-friendly map editor for hospital layouts, and 3-D maps.
+                        </p>
+                        <p class="text-white indent-8">Through this project I honed my skills working with algorithms and pathfinding, 
+                            learned the basics of full stack website development, 
+                            got hands-on experience working with agile development, 
+                            and improved my collaborative abilities in a large, fast-paced, team.</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <img src="assets\images\mass_2.png" alt="" class="w-75 rounded-3xl self-center" />
+                        <a href="https://cpdlearn.massgeneralbrigham.org/accreditation-services/" class="underline text-white italic">Mass General Brigham</a>
+                        <p class="text-white">(actual site, NOT my project)</p>
+                    </div>
+                    
+                </div>
+                <button
+                    onclick="this.nextElementSibling.classList.toggle('max-h-0'); 
+                            this.nextElementSibling.classList.toggle('max-h-[1000px]')"
+                    class="group text-emerald-400 text-xl font-semibold mt-6 w-80 self-center">
+                    View More
+                    <span class="block h-0.5 bg-emerald-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="flex flex-row items-center gap-4 pt-6 justify-center">
+                    <div class="flex flex-col gap-1 items-center w-lg">
+                        <img src="assets\images\soft_eng_nav.png" alt="" class=" self-center" />
+                        <p class="text-white italic">Navagation Page</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <img src="assets\images\soft_eng_3d_nav_with_path.png" alt="" class="w-lg self-center" />
+                        <p class="text-white italic">In-hospital 3d pathing</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 items-center pt-8">
+                        <img src="assets\images\soft_eng_map_editor.png" alt="" class="w-lg self-center" />
+                        <p class="text-white italic">Map Editor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col p-6 rounded-3xl border-2 border-dust bg-gray-800/80">
+                <div class="flex flex-row justify-center gap-15">
+                    <img src="assets\images\shift_start.png" alt="" class="w-65 rounded-3xl self-center" />
+                    <div class="flex flex-col w-210 items-center gap-8">
+                        <h1 class="text-5xl font-bold text-emerald-500 font-serif"><span class="text-white font-sans">2-D Platforming Game</span> "SHIFT"</h1>
+                        <p class="text-white indent-8"><span class="italic">SHIFT</span> is a 2-D platforming game created by myself and five other students for the 
+                            WPI GoatHacks hackathon in 2025, winning <span class="text-dust">Best Game</span> at the event. The game, while unfinished, features simplistic graphics and
+                             includes unique gameplay mechanics, such as the ability for the player to travel through time to complete 
+                             levels, and was built with C# and Unity 6. 
+                        </p>
+                        <p class="text-white indent-8">In this project, I primarily focused on the development of player and enemy movement, enemy AI, 
+                            and interactions between the player and their surroundings, such as special collisions and damage tracking. 
+                            Being my first time working with an engine such as Unity, I gained valuable experience creating an interactive application that saw real-time user input and program feedback.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-center gap-8 pt-10">
+                        <a class="inline-flex gap-1 items-center p-2 h-10 rounded-lg border-2 border-dust text-white text-xl" href="https://github.com/ThomasBranchaud/Shift">
+                        GitHub
+                        <img class="w-5 h-5 invert" src="assets\images\icone-github-noir.png" ald="GitHub">
+                        </a>
+                        <a class="inline-flex gap-1 items-center p-2 h-10 rounded-lg border-2 border-dust text-white text-xl" href="https://devpost.com/software/shift-gu5owx">
+                        Devpost
+                        <img class="w-5 h-5" src="assets\images\devpost-logo-mobile.svg" ald="GitHub">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
